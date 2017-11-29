@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<fieldset>
+    <legend>标签语义化</legend>
+    标签语义化意义:<br>
+    1.网页结构合理:去掉css后结构依旧很清晰 <br>
+    2.有利于seo,和搜索引擎建立良好沟通,容易被搜索引擎抓取<br>
+    3.方便其他设备解析(屏幕阅读器,盲人读取,移动设备)<br>
+    4.便于团队开发和维护
+    <br>
+    <br>
+    <br>
+    注意事项<br>
+    1.尽可能少时的使用无意义的标签div和span<br>
+    2.在语义不明显时,既可以使用div或者p,尽量使用p,因为p在默认情况下有上下间距,对兼容特殊终端有利。<br>
+    3.不要使用纯样式标签,如:b,font,u等,改用css设置。<br>
+    4.需要强调的文本,可以包含在strong或者em标签中,strong默认样式是加粗(不要用b),em时斜体(不要用i);
+</fieldset>
+<form action="1.php" method="get">
+    用户名:<input type="text" name="username" maxlength="6">
+    <br>
+    <br>
+    密&nbsp;&nbsp;&nbsp;码:<input type="text" name="password" readonly="true">
+    <br>
+    <br>
+    <hr>
+    性&nbsp;&nbsp;&nbsp;别:
+    <input type="radio" name="sex">男
+    <input type="radio" name="sex" checked>女
+    <br>
+    <br>
+
+    <hr>
+    地&nbsp;&nbsp;&nbsp;区:
+    <select name="are" >
+        <option  value="北京" selected>北京</option>
+        <option value="黑龙江">黑龙江</option>
+        <option value="海南">海南</option>
+    </select>
+    <br>
+    <br>
+    分组:
+    地&nbsp;&nbsp;&nbsp;区:
+    <select name="are" >
+        <optgroup label="北京">
+            <option  value="" selected>昌平</option>
+            <option value="">朝阳</option>
+            <option value="">海淀</option>
+
+        </optgroup>
+        <optgroup label="黑龙江">
+            <option  value="" selected>齐齐哈尔</option>
+            <option value="">哈尔滨</option>
+            <option value="">大庆</option>
+
+        </optgroup>
+
+    </select>
+    <br>
+    <br>
+    多&nbsp;&nbsp;&nbsp;选:
+    <select multiple="multiple" name="are" id="">
+        <option value="红烧肉" >红烧肉</option>
+        <option value="地三鲜">地三鲜</option>
+        <option value="奥利奥">奥利奥</option>
+    </select>
+    <br>
+    <br>
+
+    <hr>
+    多选框:
+    <input name="check" type="checkbox" checked>喝酒
+    <input name="check" type="checkbox" >抽烟
+    <input name="check" type="checkbox" >烫头
+    <br>
+    <br>
+    <hr>
+    多行文本框:
+    <textarea name="" id= cols="30" rows="10"></textarea>
+    <br>
+    <br>
+    <hr>
+    控制条
+    <input type="range" step="5" max="20">
+    <input type="email" autocomplete="true">
+    <br>
+    <br>
+    <hr>
+    <input type="submit" value="按钮">
+    <br>
+    图片按钮
+    <input type="image" src="test.png" width="80px">
+    <br>
+    重置:
+    <input type="reset">
+    <br>
+</form>
+<hr>
+<br>
+分组fieldset,分组信息legend
+<fieldset>
+    <legend>分组信息</legend>
+
+</fieldset>
+</body>
+</html>

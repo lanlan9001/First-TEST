@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--table写完整了方便于seo,对seo更友好-->
+<!--cellspacing 表格间距离默认是2 ,cellpadding内容到边框距离-->
+<!--tbody>tr*3>td*3+tap-->
+<table border="1" cellpadding="10" cellspacing="0" align="center" bgcolor="#f0ffff" bordercolor="red">
+    <!--表头与列中文字位置一样 center-->
+    <caption>表头</caption>
+    <thead>
+    <!--格式要在tr中修改,在thead和tbody中修改没有作用-->
+    <tr >
+        <th>列头1</th>
+        <th>列头2</th>
+        <th>列头3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <!--alt整排修改-->
+        <!--合并行单元格colspan-->
+        <td colspan="2" >数字1 数字2</td>
+
+        <!--rowspan合并列-->
+        <td rowspan="2" valign="top">数字3</td>
+    </tr>
+    <tr>
+        <td>数据1</td>
+        <td>数据2</td>
+
+    </tr>
+
+    </tbody>
+    <tfoot>
+    <td>脚1</td>
+    <td>脚2</td>
+    <td>脚3</td>
+    </tfoot>
+
+
+</table>
+</body>
+</html>
